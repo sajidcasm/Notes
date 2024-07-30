@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, "Poppins";
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    padding-top: 4%;
+    padding-left: 10%;
+    color: white;
+
+}
+
+.container h1{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container h1 img{
+    width: 60px;
+
+}
+
+.container button img{
+    width: 25px;
+    margin-right: 8px;
+}
+
+.container button{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    font-size: 16px;
+    color: white;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+    transition: 0.3s ease, transform 0.3s ease;
+    
+}
+
+.container button:hover {
+    background: linear-gradient(90deg, rgba(63, 43, 150, 0.8) 0%, rgba(168, 192, 255, 0.8) 100%);
+    transform: scale(1.05);
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+
+    border-radius: 5px;
+
+
+}
+
+.input-box img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and small devices */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 5%;
+        padding-top: 2%;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .container button {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .input-box {
+        max-width: 90%;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding-left: 3%;
+        padding-top: 2%;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .container button {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .input-box {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .input-box img {
+        width: 20px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
